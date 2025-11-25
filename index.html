@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECOBTP - Concevoir et Construire vos projets au Sénégal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CHARTE GRAPHIQUE DECOBTP --- */
+        :root {
+            --color-main-steel: #78869b;    /* Votre couleur principale */
+            --color-dark-blue: #060055;     /* Bleu nuit (Nav & Footer) */
+            --color-darkest: #05002A;       /* Textes foncés */
+            --color-gold: #F8D458;          /* Or vif (Boutons) */
+            --color-bronze: #8C5919;        /* Accents */
+        }
+
+        body { font-family: 'Montserrat', sans-serif; color: var(--color-darkest); }
+
+        /* Navigation */
+        .navbar { background-color: var(--color-dark-blue) !important; padding-top: 1rem; padding-bottom: 1rem;}
+        .navbar-brand img { height: 50px; /* Ajustez selon la taille réelle de votre logo */ }
+        .nav-link { color: rgba(255,255,255,0.8) !important; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; margin-left: 15px;}
+        .nav-link.active, .nav-link:hover { color: var(--color-gold) !important; }
+        .btn-gold { background-color: var(--color-gold); color: var(--color-dark-blue); font-weight: 800; border: none; padding: 10px 25px; text-transform: uppercase;}
+        .btn-gold:hover { background-color: #e0bd3f; color: var(--color-darkest); }
+
+        /* Hero Section (Bannière) */
+        .hero-section {
+            /* REMPLACEZ CETTE IMAGE PAR UNE PHOTO DE GÉNIE CIVIL DE HAUTE QUALITÉ */
+            background: linear-gradient(rgba(6, 0, 85, 0.7), rgba(5, 0, 42, 0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; height: 85vh;
+            display: flex; align-items: center; color: white;
+        }
+        .hero-tagline { color: var(--color-gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase;}
+        .hero-title { font-weight: 800; font-size: 3.5rem; line-height: 1.2;}
+
+        /* Sections Générales */
+        section { padding: 80px 0; }
+        .section-title { font-weight: 800; color: var(--color-dark-blue); text-transform: uppercase; margin-bottom: 40px; position: relative;}
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--color-gold); margin-top: 15px;}
+        
+        /* Services Cards */
+        .service-box { background: white; padding: 40px 30px; border-bottom: 4px solid var(--color-bronze); transition: 0.3s; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.05);}
+        .service-box:hover { transform: translateY(-10px); border-bottom-color: var(--color-gold); }
+        .service-icon { font-size: 3rem; color: var(--color-main-steel); margin-bottom: 20px; }
+
+        /* Footer */
+        footer { background-color: var(--color-dark-blue); color: rgba(255,255,255,0.7); padding: 60px 0 20px;}
+        footer h5 { color: white; font-weight: 700; text-transform: uppercase; margin-bottom: 25px; }
+        footer a { color: rgba(255,255,255,0.7); text-decoration: none; transition: 0.3s;}
+        footer a:hover { color: var(--color-gold); }
+        .footer-contact i { color: var(--color-gold); margin-right: 10px; width: 20px;}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight:900; font-size:1.5rem; color:white;">DECO<span style="color:var(--color-gold)">BTP</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="apropos.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="contact.html" class="btn btn-gold"><i class="fas fa-phone-alt me-2"></i> Demander un devis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="hero-tagline mb-3">— Concevoir et Construire vos projets</p>
+                    <h1 class="hero-title display-4 mb-4">L'Expertise du Génie Civil au Sénégal</h1>
+                    <p class="lead mb-5 text-white-50 fw-semibold">DECOBTP est votre partenaire de confiance pour tous travaux de bâtiment, gros œuvre et ingénierie civile. Qualité, rigueur et innovation.</p>
+                    <a href="services.html" class="btn btn-gold btn-lg me-3">Nos Services</a>
+                    <a href="realisations.html" class="btn btn-outline-light btn-lg">Nos Projets</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Équipe DECOBTP" class="img-fluid rounded shadow-lg border-4 border-white">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="section-title">Votre partenaire BTP de confiance</h2>
+                    <p class="lead fw-bold text-primary" style="color: var(--color-main-steel) !important;">Une approche moderne de la construction.</p>
+                    <p>Basée à Dakar, DECOBTP intervient sur l'ensemble du territoire sénégalais. Nous maîtrisons tous les aspects du bâtiment, de la conception technique aux finitions.</p>
+                    <p>Notre engagement : livrer des structures solides, durables et conformes aux normes les plus exigeantes du génie civil.</p>
+                    <a href="apropos.html" class="btn btn-outline-dark mt-3 fw-bold">En savoir plus sur nous</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #f4f6f8;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title d-inline-block">Nos Domaines d'intervention</h2>
+                <p class="mt-3">Une offre globale pour tous vos besoins en construction.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-box text-center">
+                        <i class="fas fa-building service-icon"></i>
+                        <h4>Génie Civil & Gros Œuvre</h4>
+                        <p>Construction de structures béton, fondations complexes, ouvrages d'art et bâtiments industriels.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center">
+                        <i class="fas fa-hard-hat service-icon"></i>
+                        <h4>Construction Bâtiment</h4>
+                        <p>Réalisation de projets immobiliers, résidentiels et commerciaux, de la conception à la clé en main.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center">
+                        <i class="fas fa-tools service-icon"></i>
+                        <h4>Rénovation & Aménagement</h4>
+                        <p>Réhabilitation de structures existantes, travaux de second œuvre et aménagements intérieurs.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-gold">Voir tous nos services</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-3">DECO<span style="color:var(--color-gold)">BTP</span></h3>
+                    <p class="mb-4">Concevoir et Construire vos projets avec rigueur et professionnalisme partout au Sénégal.</p>
+                     <div>
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">L'Entreprise</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="realisations.html">Nos Projets</a></li>
+                        <li><a href="contact.html">Demander un devis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-contact">
+                    <h5>Nous Contacter</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Dalifort lot n°49, Dakar - Sénégal</p>
+                    <p><i class="fas fa-phone-alt"></i> +221 33 832 03 99</p>
+                    <p><i class="fas fa-mobile-alt"></i> +221 77 108 04 82</p>
+                    <p><i class="fas fa-envelope"></i> decobtp13@gmail.com</p>
+                </div>
+            </div>
+            <hr class="my-5" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DECOBTP. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
