@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez DECOBTP - Devis Construction Dakar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-main-steel: #78869b; --color-dark-blue: #060055; --color-darkest: #05002A; --color-gold: #F8D458; --color-bronze: #8C5919;
+        }
+        body { font-family: 'Montserrat', sans-serif; color: var(--color-darkest); padding-top: 76px; /* Pour ne pas cacher sous le menu fixe */}
+        .navbar { background-color: var(--color-dark-blue) !important; }
+        .nav-link { color: rgba(255,255,255,0.8) !important; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; margin-left: 15px;}
+        .nav-link.active, .nav-link:hover { color: var(--color-gold) !important; }
+        .btn-gold { background-color: var(--color-gold); color: var(--color-dark-blue); font-weight: 800; border: none; padding: 10px 25px; text-transform: uppercase;}
+        .btn-gold:hover { background-color: #e0bd3f; color: var(--color-darkest); }
+        
+        /* Style spécifique à la page contact */
+        .page-header { background-color: var(--color-main-steel); padding: 60px 0; color: white; text-align: center; margin-bottom: 60px;}
+        .contact-info-box { background: var(--color-dark-blue); color: white; padding: 30px; border-radius: 5px; height: 100%;}
+        .contact-info-box i { color: var(--color-gold); font-size: 1.5rem; margin-bottom: 15px;}
+        .form-control { padding: 12px; border-radius: 0; border: 1px solid #ddd; background-color: #f9f9f9;}
+        .form-control:focus { border-color: var(--color-gold); box-shadow: none; background-color: white;}
+        
+        /* Footer Styles (Identique à l'accueil) */
+        footer { background-color: var(--color-dark-blue); color: rgba(255,255,255,0.7); padding: 60px 0 20px; margin-top: 80px;}
+        footer h5 { color: white; font-weight: 700; text-transform: uppercase; margin-bottom: 25px; }
+        footer a { color: rgba(255,255,255,0.7); text-decoration: none; transition: 0.3s;}
+        footer a:hover { color: var(--color-gold); }
+        .footer-contact i { color: var(--color-gold); margin-right: 10px; width: 20px;}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight:900; font-size:1.5rem; color:white;">DECO<span style="color:var(--color-gold)">BTP</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="apropos.html">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="contact.html" class="btn btn-gold"><i class="fas fa-phone-alt me-2"></i> Demander un devis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="fw-bold">Contactez-nous</h1>
+            <p class="lead">Parlons de votre projet de construction</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="contact-info-box text-center text-md-start">
+                        <h3 class="mb-4 fw-bold">Nos Coordonnées</h3>
+                        
+                        <div class="d-flex mb-4 align-items-start">
+                            <i class="fas fa-map-marker-alt mt-1 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-white">Adresse</h5>
+                                <p class="mb-0">Dalifort lot n°49,<br>Dakar - Sénégal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4 align-items-start">
+                            <i class="fas fa-phone-alt mt-1 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-white">Téléphone</h5>
+                                <p class="mb-1">Fixe : 33 832 03 99</p>
+                                <p class="mb-0">Mobile : 77 108 04 82</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-envelope mt-1 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1 text-white">Email</h5>
+                                <p class="mb-0">decobtp13@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4" style="color: var(--color-dark-blue);">Envoyez-nous un message</h2>
+                    <p class="mb-5">Remplissez ce formulaire pour une demande de devis ou d'information. Nous vous répondrons sous 24h.</p>
+                    
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nom" class="form-label fw-bold">Nom complet *</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="tel" class="form-label fw-bold">Téléphone *</label>
+                                <input type="tel" class="form-control" id="tel" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="col-12">
+                                <label for="sujet" class="form-label fw-bold">Type de projet *</label>
+                                <select class="form-select form-control" id="sujet" required>
+                                    <option selected>Choisir...</option>
+                                    <option value="1">Construction neuve</option>
+                                    <option value="2">Génie Civil / Gros Œuvre</option>
+                                    <option value="3">Rénovation</option>
+                                    <option value="4">Autre demande</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-bold">Message / Description du projet *</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-gold btn-lg w-100 py-3">Envoyer ma demande</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-3">DECO<span style="color:var(--color-gold)">BTP</span></h3>
+                    <p class="mb-4">Concevoir et Construire vos projets avec rigueur et professionnalisme partout au Sénégal.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">L'Entreprise</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="realisations.html">Nos Projets</a></li>
+                        <li><a href="contact.html">Demander un devis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-contact">
+                    <h5>Nous Contacter</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Dalifort lot n°49, Dakar - Sénégal</p>
+                    <p><i class="fas fa-phone-alt"></i> 33 832 03 99</p>
+                    <p><i class="fas fa-mobile-alt"></i> 77 108 04 82</p>
+                    <p><i class="fas fa-envelope"></i> decobtp13@gmail.com</p>
+                </div>
+            </div>
+            <hr class="my-5" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 DECOBTP. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
